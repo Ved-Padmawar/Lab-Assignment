@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: rgba(25, 26, 29, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-wrap: wrap;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        nav {
+            background: rgba(25, 26, 29, 1);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .name {
+            width: 104px;
+            color: rgba(255, 255, 255, 1);
+            font-family: 'Arial', sans-serif;
+            font-weight: normal;
+            font-size: 20px;
+            opacity: 1;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav li {
+            margin: 0 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 15px;
+            font-weight: normal;
+            font-family: 'Arial', sans-serif;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 80px;
+        }
+        .card {
+            background: #fff;
+            height: 400px;
+            width: 300px;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.5s;
+        }
+        .card:hover {
+            transform: translateY(-20px);
+        }
+        .card img {
+            width: 100%;
+            max-height: 180px;
+            object-fit: cover;
+            margin: 0;
+        }
+        .card h2 {
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #007BFF;
+            margin: 10px 0;
+        }
+        .card p {
+            font-size: 16px;
+            color: #555; 
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .card a {
+            display: inline-block;
+            background: #007BFF;
+            padding: 10px 20px;
+            border-radius: 10px; 
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold; 
+            transition: 0.5s;
+            margin-bottom: 10px; 
+        }
+        .card a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Home.html" class="name">Ved Padmawar</a>
+
+        <ul>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="card-container">
+        <div class="card">
+            <img src="TravelPlanner.png" alt="Image 1">
+            <h2>Travel Planner</h2>
+            <p>Your one-stop destination for seamless travel bookings. Book flights, hotels, and activities effortlessly, all in one place. Experience the convenience of hassle-free travel planning and turn your dream vacations into reality with ease.</p>
+            <a href="https://github.com/thevedp/TravelPlanner.git">Source Code</a>
+        </div>
+        <div class="card">
+            <img src="GeoCoder.png" alt="Image 2">
+            <h2>GeoCoder</h2>
+            <p>Reverse Geocoding API: Simplify location-based data processing. Convert latitudes and longitudes into human-readable addresses effortlessly. Enhance your geospatial applications with ease.</p>
+            <a href="https://github.com/nitinmp/geocoder.git">Source Code</a>
+        </div>
+        <div class="card">
+            <img src="SecuritySystem.jpeg" alt="Image 3">
+            <h2>Security System</h2>
+            <p>A smart surveillance solution that triggers video recording upon detecting a face. Ensure the safety of your premises with real-time facial recognition and automated recording.</p>
+            <a href="https://github.com/thevedp/SecuritySystem.git">Source Code</a>
+        </div>
+        <div class="card">
+            <img src="Attendance.png" alt="Image 4">
+            <h2>Attendance System</h2>
+            <p>An interactive attendance tool allowing users to click on student role number cards to mark attendance. After submission, it generates a list of present role numbers and their count, streamlining attendance management.</p>
+            <a href="source4.html">Source Code</a>
+        </div>
+    </div>
+</body>
+</html>
